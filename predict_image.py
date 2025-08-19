@@ -17,7 +17,8 @@ img_array = np.expand_dims(img_array, axis=0)
 prediction = model.predict(img_array)
 
 if prediction[0][0] > 0.5:
-    print("🐶 이 이미지는 개입니다.")
+    print("이 이미지는 개입니다.")
 else:
-    print("🐱 이 이미지는 고양이입니다.")
+    print("이 이미지는 고양이입니다.")
+
 
